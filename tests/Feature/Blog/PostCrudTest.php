@@ -11,10 +11,11 @@ use Livewire\Livewire;
 test('authenticated user can view posts index', function () {
     $user = User::factory()->create();
 
-    $this->actingAs($user)
-        ->get(route('admin.posts.index'))
-        ->assertSuccessful()
-        ->assertSeeLivewire(Index::class);
+    $response = $this->actingAs($user)
+        ->get(route('admin.posts.index'));
+
+    $response->assertSuccessful();
+    $response->assertSee('Blog Posts');
 });
 
 test('posts index displays posts with categories', function () {
