@@ -33,7 +33,7 @@ A Laravel 12 application with Livewire and Flux UI featuring a blog system with 
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone git@github.com:TurkHosting/coolify-demo-app.git
 cd coolify-demo-app
 ```
 
@@ -90,7 +90,7 @@ This application is configured to deploy on Coolify using Nixpacks.
 1. Log in to your Coolify instance
 2. Go to **Projects** > **New Resource** > **Application**
 3. Select **Public Repository** or connect your Git provider
-4. Enter your repository URL
+4. Enter your repository URL: `git@github.com:TurkHosting/coolify-demo-app.git`
 5. Select the branch to deploy (e.g., `main`)
 
 ### Step 2: Configure Build Settings
